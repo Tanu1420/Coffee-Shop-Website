@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Coffee Shop</title>
+    <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .logo img {
+    width: 15rem;
+    height: 9rem;
+    border: 1rem ridge transparent;
+    border-radius: 50%;
+    background-color: rgba(214, 147, 22, 0.904);
+    box-shadow: .4rem .4rem brown;
+}
+  
+  .navbar{
+    background-color: rgba(214, 147, 22, 0.904);
+    top: 0rem;
+    
+  }
+  .nav-item{
+      padding: 2rem;
+  }
+   .nav-item a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    padding:1rem;
+    text-shadow: .1rem .2rem 0.7rem black;
+  }
+  a:hover{
+    font-size:2.25rem;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.164);
+   
+  }
+  .d-flex{
+      margin: 2rem;
+  }
+  .d-flex .btn{
+    border: .1rem solid transparent;
+    margin: .2rem;
+    font-size: 1.5rem;
+    padding: .1rem;
+    font-family: Calibri, "Trebuchet MS", sans-serif;
+    background-color:brown;
+    color: cornsilk;
+  }
+  
+  .d-flex .btn:hover{
+    border-bottom: .3rem solid rgba(7, 6, 6, 0.849);
+    border-left: .3rem solid black;
+    padding: .3rem;
+    box-shadow: .2rem .4rem rgba(128, 128, 128, 0.3);
+  }
+  #coffee-main {
+    position: relative;
+    text-align: center;
+    background-color: rgba(241, 211, 183, 0.466);
+  }
+  #coffee-main img {
+    width: 152rem;
+    height: 70rem;
+  }
+  #first {
+        position: absolute;
+    top: 15rem;
+    right: 51rem;
+    font-size: 3.5rem;
+    font-weight: 5rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 55rem;
+    color: rgba(231, 152, 4, 0.904);
+    text-shadow: .4rem .4rem black;
+  }
+  #second {
+    position: absolute;
+    top: 19.5rem;
+    right: 51rem;
+    font-size: 3.5rem;
+    font-weight: 5rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 55rem;
+    color: rgba(231, 152, 4, 0.904);
+    text-shadow: .3rem .4rem brown;
+  }
+  div #cold-coffee {
+    width: 20rem;
+    height: 20rem;
+    border: .1rem solid transparent;
+    border-radius: 50%;
+  }
+  div #expresso {
+    width: 20rem;
+    height: 20rem;
+    border: .1rem solid transparent;
+    border-radius: 50%;
+  }
+  
+  div #capuchino {
+    width: 20rem;
+    height: 20rem;
+    border: .1rem solid transparent;
+    border-radius: 50%;
+  }
+  .speciality{
+      height: 7rem;
+      margin-top: 0;
+      line-height: 6rem;
+      font-size: 2rem ;
+      color: brown;
+      text-shadow: .15rem .15rem  rgb(250, 249, 249);
+      font-weight: bold;
+      background-color:rgb(252, 175, 76);
+      text-align: center;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+
+
+  }
+  div #capuchino {
+    width: 25rem;
+    height: 25rem;
+    border: 1rem solid brown;
+    border-radius: 50%;
+    margin: auto;
+  }
+  
+  div #expresso {
+    width: 25rem;
+    height: 25rem;
+    border: 1rem solid brown;
+    border-radius: 50%;
+    margin: auto;
+    
+  }
+  
+  div #cold-coffee {
+    width: 25rem;
+    height: 25rem;
+    border: 1rem solid brown;
+    border-radius: 50%;
+    margin: auto;
+  }
+  
+  h2{
+      text-align: center;
+  }
+  footer{
+    background-color: rgb(252, 175, 76);
+    text-align: center;
+    
+  }
+  footer div{
+      width: 150rem;
+      padding: 4.5rem;
+      font-size: 2.5rem;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      letter-spacing: .2rem;
+      word-spacing: 1.5rem;
+      color: brown;
+      text-shadow: .15rem .15rem  rgb(250, 249, 249);
+      font-weight: bold;
+     
+
+    }
+  
+    html{
+      font-size: 62.5%;
+      }
+ @media(max-width:768px){
+    html{
+      font-size: 45%;
+      }
+      #second{
+      display: none; 
+      }
+      #first{
+      display: none; 
+      }
+    }
+@media(max-width:1030px){
+  #first {
+       
+    top: 15rem;
+    right: 26rem;
+    font-size: 3.5rem;
+    font-weight: 5rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 55rem;
+    color: rgba(231, 152, 4, 0.904);
+    text-shadow: .4rem .4rem black;
+  }
+  #second {
+    position: absolute;
+    top: 19.5rem;
+    right: 30rem;
+    font-size: 3.5rem;
+    font-weight: 5rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 45rem;
+    color: rgba(231, 152, 4, 0.904);
+    text-shadow: .3rem .4rem brown;
+  }
+ 
+}    
+
+    
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="logo"><img src="../coffee pic/coffee logo4.jpg" alt="logo"></div>
+         </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="menu.html">Flavour</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link active" href="order2.html">Order</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="aboutus.html">About</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" href="contact us.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="input form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="coffee-main">
+        <img src="../coffee pic/coffee-801781_1280.jpg" class="img-fluid" alt="">
+        <div class="heading ">
+        <h2 id="first">THE BEST WAY TO STEAM MILK ?</h2>
+        <h2 id="second">DENSE AND DELICIOUS FORM</h2>
+       </div>   
+        </div>
+
+    <!-- our speciality -->
+    <section class="speciality">
+    <div >Our speciality</div>
+    </section>
+    <div class="card-group">
+       <div class="card">
+          <img id="capuchino" src="../coffee pic/capuchino.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h2 class="card-title">Capuchino</h2>
+          </div>
+        </div>
+        <div class="card">
+          <img id="expresso" src="../coffee pic/unsplash/ben-kolde--sKBWdCyBLg-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h2 class="card-title">Expresso</h2>
+            </div>
+        </div>
+        <div class="card">
+          <img id="cold-coffee" src="../coffee pic/Cold-coffee2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h2 class="card-title">Cold-Coffee</h2>
+        </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="footer mt-auto py-3 ">
+        <div class="container" >
+          <span  >WELCOME TO COFFEE SHOP</span>
+        </div>
+      </footer>
+     
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>Payment Form</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        form {
+            width: 100rem;
+            margin: auto;
+            padding: 4rem;
+        }
+
+        fieldset,
+        input {
+            margin: 3rem;
+        }
+
+        input {
+            padding: 1rem;
+        }
+
+        label {
+            font-size: 2.5rem;
+            font-family: 'Bebas Neue', cursive;
+            padding: 1rem;
+            margin: 2rem;
+        }
+
+        .heading {
+            font-size: 3.5rem;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: .2rem;
+            text-decoration: underline;
+            background-color: rgba(153, 151, 151, 0.397);
+            text-shadow: .2rem .2rem rgb(253, 252, 252);
+        }
+
+        .heading1 {
+            color: brown;
+        }
+
+        .heading2 {
+            color: rgb(248, 185, 25);
+        }
+
+        .btn,
+        button {
+            margin: 2.5rem;
+            padding: 1rem;
+            border: .4rem solid transparent;
+            border-radius: .4rem;
+            background-color: rgb(238, 144, 62);
+            color: white;
+            box-shadow: .2rem .2rem rgba(165, 42, 42, 0.774);
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: .2rem;
+            font-size: 2rem;
+
+        }
+
+        button>a {
+            color: rgb(250, 244, 244);
+            font-size: 1.25rem;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: .2rem;
+            font-size: 2rem;
+
+        }
+
+        button>a:hover {
+            color: brown;
+        }
+
+        button:hover {
+            color: brown;
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: rgb(146, 62, 14);
+        }
+
+        li.footer {
+            display: inline-block;
+            padding: 1rem;
+            margin: 1rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <p style="color: red; font-size: 2rem;"> Required field followed by *</p>
+        <h1 class="heading heading1">PAYMENT </h1>
+        <h3 class="heading heading2">CONTACT INFORMATION </h3>
+        <label>NAME:<strong style="color: red;">*</strong><input type="text" name="name" required></label><br>
+        <fieldset>
+            <legend style="font-size: 2.5rem; font-family: 'Bebas Neue', cursive;padding:1rem ;margin: 2rem;">GENDER
+            </legend>
+            <label>
+                MALE<input type="radio" name="gender" id="male">
+                FEMALE<input type="radio" name="gender" id="female">
+            </label><br>
+        </fieldset>
+        <label>ADDRESS:<strong style="color: red;">*</strong><textarea name="address" id="address" cols="20" rows="10"
+                required></textarea></label><br>
+        <label>Email:<strong style="color: red;">*</strong><input type="text" name="email" id="email"
+                required></label><br>
+        <label>PINCODE:<strong style="color: red;">*</strong><input type="number" name="pincode" id="pincode"
+                required></label><br>
+        <hr>
+        <hr>
+        <h3 class="heading heading2">PAYMENT INFORMATION</h3>
+        <label>CARD TYPE:<strong style="color: red;">*</strong><select name="card_type" id="card_type"
+                style="margin: 2rem; padding: 1rem;" required>
+                <option value=" ">---select a card type---</option>
+                <option value="Visa"> Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="Master_card">Master_card</option>
+            </select></label><br>
+        <label> CARD_NUMBER:<strong style="color: red;">*</strong><input type="password" name="card_number"
+                id="card_number" required></label><br>
+        <label> EXPIRATION DATE:<strong style="color: red;">*</strong><input type="date" name="exp_date" id="exp_date"
+                required></label><br>
+        <label> CVV:<strong style="color: red;">*</strong><input type="password" name="cvv" id="cvv"
+                required></label><br>
+        <button class="btn" type="submit" value="PAY NOW">Pay Now</button>
+    </form>
+    <footer>
+        <h2
+            style="text-align: center;padding-top:1rem; font-family: 'Dancing Script', cursive; font-size: 2rem; font-weight: bold;">
+            FOLLOW US ON:</h2>
+        <ul>
+            <li class="footer"><i class="bi bi-facebook"
+                    style="font-size: 2rem; color:cornsilk;"></i>coffeeshopfacebook.com</li>
+            <li class="footer"><i class="bi bi-instagram"
+                    style="font-size: 2rem; color:cornsilk;"></i>coffeeshopinstagram.com</li>
+            <li class="footer"><i class="bi bi-twitter"
+                    style="font-size: 2rem; color:cornsilk;"></i>coffeeshop123twitter.com</li>
+            <br>
+            <li class="footer"><button class="btn" type="button"><a href="index2.html">Home</a></button>
+            </li>
+            <li class="footer"><button class="btn" type="submit" value="button"><a
+                        href="order2.html">Order</a></button></li>
+            <li class="footer"><button class="btn" type="submit" value="button"><a href="menu.html">Menu
+                    </a></button></li>
+        </ul>
+
+    </footer>
+</body>
+
+</html>

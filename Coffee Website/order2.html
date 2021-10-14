@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>Hello, world!</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    #heading {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bolder;
+      padding: 1.5rem;
+      margin-bottom: 5rem;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: rgb(238, 144, 62);
+      color: white;
+      text-shadow: .2rem .2rem black;
+    }
+
+    #head {
+      display: inline-block;
+      font-size: 3rem;
+      padding: 2rem;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      margin: 3rem;
+      margin-top: 6rem;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bolder;
+      color: rgb(216, 104, 6);
+      text-shadow: .2rem .2rem brown;
+      background-color: rgba(0, 0, 0, 0.137);
+    }
+
+    .btn,
+    button {
+      margin: 2.5rem;
+      padding: 1rem;
+      border: .4rem solid transparent;
+      border-radius: .4rem;
+      background-color: rgb(238, 144, 62);
+      color: white;
+      box-shadow: .2rem .2rem rgba(165, 42, 42, 0.774);
+
+    }
+
+    button>a {
+      color: brown;
+      font-size: 1.25rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    button>a:hover {
+      color: brown;
+    }
+
+    button:hover {
+
+      background-color: #fff;
+    }
+
+    .card-title {
+      padding: .2rem;
+      margin-left: .3rem;
+      color: brown;
+      font-size: 2rem;
+    }
+
+    footer {
+      background-color: rgba(230, 211, 161, 0.795);
+      text-align: center;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="heading" class="container-fluid">
+    <p>Order Your Favourite One... </p>
+  </div>
+
+
+  <h2 id="head">HOt :</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img class="img-fluid" src="../coffee pic/unsplash/mariana-ibanez-D8-sp5a_IM8-unsplash.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title"> Blonde Cafe Latte</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img
+          src="../coffee pic/unsplash/anna-tukhfatullina-food-photographer-stylist-XS3ivs2dlSo-unsplash.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title"> Hot Caramel Machiato</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/hot skinny mocha.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title"> Skinny Mocha</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/kenta-kikuchi-1myqnNv0vUM-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title"> Hot Coffee</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/skyler-gerald-nYgkStQeJVo-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Irish Coffee</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <h2 id="head">COLD :</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img class="img-fluid" src="../coffee pic/unsplash/pratiksha-mohanty-27ayZ9Amvw8-unsplash.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Nitro Cold Brew</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/rachel-mcdermott-HRfnyL6AO-A-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title"> Iced Latte</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/eiliv-sonas-aceron-HbI5748MWI4-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title"> Frapuchino</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/clarissa-carbungco-uy9DJw9e_vs-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Creamy Iced Cafe</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <h2 id="head">Expresso :</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img class="img-fluid" src="../coffee pic/unsplash/nathan-dumlao-nBJHO6wmRWw-unsplash.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Cafe Americano</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/karly-jones-5IHhtQrSRk8-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title"> Cafe Latte</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/andrew-donovan-valdivia-1a5vyKRVbnM-unsplash.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Capuchino</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/ben-kolde--sKBWdCyBLg-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Single Shot</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img
+          src="../coffee pic/unsplash/anna-tukhfatullina-food-photographer-stylist-XS3ivs2dlSo-unsplash.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Cloud Machiato</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <h2 id="head">Non-Coffee :</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img class="img-fluid" src="../coffee pic/unsplash/teacora-rooibos-mcoUdnu7t9Q-unsplash.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Herbal Tea</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/anton-darius-ZX1TWlw-grI-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title"> Green Tea</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/ben-kolde--sKBWdCyBLg-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Black Tea</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/Masala-Chai-.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Masala-Chai</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/mae-mu-kbch-i63YTg-unsplash.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Iced-Tea</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/eiliv-sonas-aceron-NWTPcPE1nJI-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Hot Chocolate</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/whitney-wright-TgQkxQc-t_U-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Orange Juice</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/claudia-soares-ewOrvEa87j4-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Fruit Smoothie</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/alexander-mils-wBIeri0fLuw-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Strawberry Shake :</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="details.html"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="../coffee pic/unsplash/s-o-c-i-a-l-c-u-t-_PDyb_7WYrs-unsplash.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Mango Shake :</h4>
+          <p class="card-text">
+            <button type="button"><a href="#add"><i class="bi bi-cart-check-fill"
+                  style="font-size: 1.5rem; color:brown;"></i> Add to cart </a></button>
+            <button type="button"><a href="#details"><i class="bi bi-arrow-right-circle"
+                  style="font-size: 1.5rem; color:brown;"></i> Details </a></button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="footer mt-auto py-3 ">
+    <div class="container">
+
+      <button type="button"><a href="#heading" ></a><i class="bi bi-arrow-up"
+          style="font-size: 1.5rem; color:brown;"></i> </button>
+      <button type="button"><a href="index2.html" target="_parent">Home</a> </button>
+      <button type="button"><a href="menu.html">Menu</a> </button>
+      <button type="button"><a href="paymentform.html">Buy Now</a> </button>
+      <button type="button"><a href="paymentform.html">Go To Cart</a> </button>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
